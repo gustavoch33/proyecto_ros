@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/Coordinates.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/DockingAction.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/DockingActionFeedback.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/DockingActionGoal.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/DockingActionResult.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/DockingFeedback.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/DockingGoal.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/DockingResult.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/GPS.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/bateria.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/isAlive.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/map_size.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/mode_status.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/modes_status.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/node_status.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/robotPose.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/sensorStatus.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/wheel.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/msg/wheel_status.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/CurrentMap.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/DeleteMap.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/GetGain.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/HardwareDetected.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/IsHardwareReady.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/MapsList.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/Modes.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/NavigationStatusError.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/Relay.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/Remap.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/RobotShutdown.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/SetGain.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/Shutdown.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/UpdateMap.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/WheelDriver.lisp"
+  "/home/odroid/catkin_ws/devel/share/common-lisp/ros/robot_msgs/srv/WheelError.lisp"
+  "CMakeFiles/robot_msgs_generate_messages_lisp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/robot_msgs_generate_messages_lisp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

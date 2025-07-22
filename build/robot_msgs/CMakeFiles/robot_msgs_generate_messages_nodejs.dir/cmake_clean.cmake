@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/Coordinates.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/DockingAction.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/DockingActionFeedback.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/DockingActionGoal.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/DockingActionResult.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/DockingFeedback.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/DockingGoal.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/DockingResult.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/GPS.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/bateria.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/isAlive.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/map_size.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/mode_status.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/modes_status.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/node_status.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/robotPose.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/sensorStatus.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/wheel.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/wheel_status.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/CurrentMap.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/DeleteMap.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/GetGain.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/HardwareDetected.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/IsHardwareReady.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/MapsList.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/Modes.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/NavigationStatusError.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/Relay.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/Remap.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/RobotShutdown.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/SetGain.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/Shutdown.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/UpdateMap.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/WheelDriver.js"
+  "/home/odroid/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/WheelError.js"
+  "CMakeFiles/robot_msgs_generate_messages_nodejs"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/robot_msgs_generate_messages_nodejs.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

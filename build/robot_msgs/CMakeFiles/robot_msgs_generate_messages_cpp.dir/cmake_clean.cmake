@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/Coordinates.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/CurrentMap.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/DeleteMap.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/DockingAction.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/DockingActionFeedback.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/DockingActionGoal.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/DockingActionResult.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/DockingFeedback.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/DockingGoal.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/DockingResult.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/GPS.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/GetGain.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/HardwareDetected.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/IsHardwareReady.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/MapsList.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/Modes.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/NavigationStatusError.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/Relay.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/Remap.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/RobotShutdown.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/SetGain.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/Shutdown.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/UpdateMap.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/WheelDriver.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/WheelError.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/bateria.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/isAlive.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/map_size.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/mode_status.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/modes_status.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/node_status.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/robotPose.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/sensorStatus.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/wheel.h"
+  "/home/odroid/catkin_ws/devel/include/robot_msgs/wheel_status.h"
+  "CMakeFiles/robot_msgs_generate_messages_cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/robot_msgs_generate_messages_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

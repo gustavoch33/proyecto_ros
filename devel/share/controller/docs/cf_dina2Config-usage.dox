@@ -1,0 +1,18 @@
+\subsubsection usage Usage
+\verbatim
+<node name="controller" pkg="controller" type="controller">
+  <param name="linearVel" type="double" value="1.0" />
+  <param name="angularVel" type="double" value="1.2" />
+  <param name="umbral" type="double" value="0.03" />
+  <param name="kpX" type="double" value="1.2" />
+  <param name="kpY" type="double" value="1.2" />
+  <param name="kdX" type="double" value="0.001" />
+  <param name="kdY" type="double" value="0.001" />
+  <param name="xDes" type="double" value="0.0" />
+  <param name="yDes" type="double" value="0.0" />
+  <param name="h" type="double" value="0.2" />
+  <param name="amplitud" type="double" value="0.8" />
+  <param name="longitud" type="double" value="0.3" />
+</node>
+\endverbatim
+

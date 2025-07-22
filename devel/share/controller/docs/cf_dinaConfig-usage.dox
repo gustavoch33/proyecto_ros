@@ -1,0 +1,16 @@
+\subsubsection usage Usage
+\verbatim
+<node name="controller" pkg="controller" type="controller">
+  <param name="kpX" type="double" value="0.14" />
+  <param name="kpY" type="double" value="0.2" />
+  <param name="kdX" type="double" value="0.016" />
+  <param name="kdY" type="double" value="0.04" />
+  <param name="kpT" type="double" value="0.01" />
+  <param name="kdT" type="double" value="0.008" />
+  <param name="xDes" type="double" value="0.0" />
+  <param name="yDes" type="double" value="0.0" />
+  <param name="tDes" type="double" value="0.0" />
+  <param name="h" type="double" value="0.2" />
+</node>
+\endverbatim
+

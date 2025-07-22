@@ -1,0 +1,2 @@
+controller:navigation_layers/navigation_layers:navigation_layers/range_sensor_layer:navigation_layers/social_navigation_layers:odometry:razor_imu_9dof:robot_core:robot_msgs:robot_navigation:rosbag_to_csv:rplidar_ros:zlac706_driver_control
+-DCATKIN_DEVEL_PREFIX=/home/odroid/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/odroid/catkin_ws/install -G Unix Makefiles

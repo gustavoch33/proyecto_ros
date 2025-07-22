@@ -1,0 +1,15 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~kpX" : \b [double] kpX min: 0.0, default: 0.14, max: 2.0
+- \b "~kpY" : \b [double] kpY min: 0.0, default: 0.2, max: 2.0
+- \b "~kdX" : \b [double] kdX min: 0.0, default: 0.016, max: 2.0
+- \b "~kdY" : \b [double] kdY min: 0.0, default: 0.04, max: 2.0
+- \b "~kpT" : \b [double] kpT min: 0.0, default: 0.01, max: 2.0
+- \b "~kdT" : \b [double] kdT min: 0.0, default: 0.008, max: 2.0
+- \b "~xDes" : \b [double] xDes min: -10.0, default: 0.0, max: 10.0
+- \b "~yDes" : \b [double] yDes min: -10.0, default: 0.0, max: 10.0
+- \b "~tDes" : \b [double] tDes min: -180.0, default: 0.0, max: 180.0
+- \b "~h" : \b [double] h min: 0.01, default: 0.2, max: 2.0
+

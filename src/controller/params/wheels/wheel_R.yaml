@@ -1,0 +1,6 @@
+port : /dev/RWHEEL
+can_id : 456
+baudarate : 57600
+rate : 25
+pub_topic : "~ticks"
+sub_topic : "~rpm"

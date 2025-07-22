@@ -1,0 +1,51 @@
+<launch>
+   #Imu
+   <arg name="razor_config_file" default="$(find controller)/params/imu/my_razor.yaml"/>
+   <node pkg="razor_imu_9dof" type="imu_node.py" name="imu_node" output="screen">
+   <!-- <node pkg="razor_imu_9dof" type="imu_node.py" name="imu_node" output="screen" respawn="true" respawn_delay="2"> -->
+       <rosparam file="$(arg razor_config_file)" command="load"/>
+   </node>
+
+   #Wheels
+   <arg name="node_name_wheel_r" default="wheel_r"/>
+   <arg name="node_name_wheel_l" default="wheel_l"/>
+   <arg name="topic_cmd_vel" default="/cmd_vel"/>
+   <node pkg="zlac706_driver_control" type="zlac706_driver_control_node" name="$(arg node_name_wheel_r)"  respawn="true">
+       <rosparam command="load" file="$(find controller)/params/wheels/wheel_R.yaml" />
+   </node>
+   <node pkg="zlac706_driver_control" type="zlac706_driver_control_node" name="$(arg node_name_wheel_l)"  respawn="true">
+       <rosparam command="load" file="$(find controller)/params/wheels/wheel_L.yaml" />
+   </node>
+   <node pkg="zlac706_driver_control" type="cmd_vel_to_rpm_node" name="cmd_a_rpm" respawn="true">
+       <rosparam command="load" file="$(find controller)/params/odometry/odometry.yaml"/>
+       <remap from="/cmd_a_rpm/cmd_vel" to="$(arg topic_cmd_vel)" />
+       <remap from="/cmd_a_rpm/wheel_r/rpm" to="$(arg node_name_wheel_r)/control_speed" />
+       <remap from="/cmd_a_rpm/wheel_l/rpm" to="$(arg node_name_wheel_l)/control_speed" />
+   </node>
+       <node pkg="zlac706_driver_control" type="wheel_speed.py" name="wheel_speed_r" respawn="true">
+       <remap from="/wheel/data" to="/wheel_r/data" />
+       <remap from="/rpm" to="/wheel_r/real_speed" />
+   </node>
+       <node pkg="zlac706_driver_control" type="wheel_speed.py" name="wheel_speed_l" respawn="true">
+       <remap from="/wheel/data" to="/wheel_l/data" />
+       <remap from="/rpm" to="/wheel_l/real_speed" />
+   </node>
+
+   #Joy
+   <node pkg="joy" type="joy_node" name="joy" output="screen"></node>
+
+   #Odometria
+   <arg name="node_name" default="odometria"/>
+   <arg name="topic_odometry" default="/wheel/odom"/>
+   <arg name="topic_wheel_l" default="/wheel_l/data"/>
+   <arg name="topic_wheel_r" default="/wheel_r/data"/>
+   <node pkg="odometry" type="odometry_node" name="$(arg node_name)" respawn="true">
+       <rosparam command="load" file="$(find controller)/params/odometry/odometry.yaml"/>
+       <remap from="/$(arg node_name)/odometry" to="$(arg topic_odometry)"/>
+       <remap from="/$(arg node_name)/wheel_l/data" to="$(arg topic_wheel_l)"/>
+       <remap from="/$(arg node_name)/wheel_r/data" to="$(arg topic_wheel_r)"/>
+   </node>
+
+   #Controlador_PD
+   <node pkg="controller" type="control_pid2" name="controlPD" output="screen"></node>
+</launch>

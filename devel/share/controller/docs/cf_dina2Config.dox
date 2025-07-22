@@ -1,0 +1,17 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~linearVel" : \b [double] linearVel min: 0.0, default: 1.0, max: 1.4
+- \b "~angularVel" : \b [double] angularVel min: 0.0, default: 1.2, max: 1.4
+- \b "~umbral" : \b [double] umbral min: 0.0, default: 0.03, max: 1.0
+- \b "~kpX" : \b [double] kpX min: 0.0, default: 1.2, max: 3.0
+- \b "~kpY" : \b [double] kpY min: 0.0, default: 1.2, max: 3.0
+- \b "~kdX" : \b [double] kdX min: 0.0, default: 0.001, max: 1.0
+- \b "~kdY" : \b [double] kdY min: 0.0, default: 0.001, max: 1.0
+- \b "~xDes" : \b [double] xDes min: -10.0, default: 0.0, max: 10.0
+- \b "~yDes" : \b [double] yDes min: -10.0, default: 0.0, max: 10.0
+- \b "~h" : \b [double] h min: 0.01, default: 0.2, max: 2.0
+- \b "~amplitud" : \b [double] amplitud min: 0.0, default: 0.8, max: 10.0
+- \b "~longitud" : \b [double] longitud min: 0.0, default: 0.3, max: 2.0
+

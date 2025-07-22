@@ -1,0 +1,8 @@
+prefix=/home/odroid/catkin_ws/install
+
+Name: zlac706_driver_control
+Description: Description of zlac706_driver_control
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lzlac706_driver_control
+Requires: roscpp std_msgs

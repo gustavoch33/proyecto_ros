@@ -1,0 +1,8 @@
+#goal definition
+int32 my_goal
+---
+#result definition
+bool on_dock
+---
+#feedback
+int32 docking_step

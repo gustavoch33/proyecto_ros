@@ -1,0 +1,8 @@
+rate: 15
+wheelR_is_backward: true
+wheelL_is_backward: false
+wheel_separation: 0.315
+#MPS_2_RPM: 95.4929658551309
+wheel_radius: 0.10
+publish_tf: true
+TICKS_PER_METER: 6518.986469044 #6518.9864690436
